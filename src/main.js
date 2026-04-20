@@ -6,6 +6,7 @@ import './style.css';
 import { initStarfield, resetAll, getProgress } from './starfield.js';
 import { initMemories, showMemory } from './memories.js';
 import { showSection, showToast, setProgress, hideHint, drawFinalConstellation } from './ui.js';
+import { initShootingStars } from './shooting-stars.js';
 
 let memoriesData = null;
 let allMemoriesDiscovered = false;
@@ -19,6 +20,7 @@ async function init() {
   window.__memoryData = memoriesData;  // starfield reads edges from here
 
   // Init modules
+  initShootingStars();
   initMemories();
 
   // Apply dynamic content
@@ -67,12 +69,6 @@ function initLandingStars(canvas) {
   let frame = 0;
   function loop() {
     ctx.clearRect(0, 0, W, H);
-    // Deep space gradient BG
-    const g = ctx.createRadialGradient(W * 0.5, H * 0.4, 0, W * 0.5, H * 0.5, W * 0.9);
-    g.addColorStop(0, '#110e2e');
-    g.addColorStop(1, '#04040f');
-    ctx.fillStyle = g;
-    ctx.fillRect(0, 0, W, H);
 
     for (const s of stars) {
       const a = s.base + Math.sin(frame * s.speed + s.phase) * 0.28;
@@ -119,19 +115,20 @@ function onMemoryActivated(e) {
 
 // ─── Constellation star tapped ─────────────────────────────
 function onConstellationStarActivated(e) {
-  const { id, total, activated, star } = e.detail;
-  showToast(`✦ Star ${activated} of ${total} discovered`);
+  const { activated, total, star, isNew } = e.detail;
 
   // If this constellation star has content, open the memory popup
   if (star && star.content) {
     showMemory({ type: 'text', content: star.content, label: star.label || null, date: null });
   }
 
-  if (activated >= total) {
-    allConstellationActivated = true;
+  // Only update progress and check completion on first activation
+  if (isNew) {
+    if (activated >= total) allConstellationActivated = true;
+    showToast(`✦ Star ${activated} of ${total} discovered`);
+    updateProgress();
+    checkCompletion();
   }
-  updateProgress();
-  checkCompletion();
 }
 
 function updateProgress() {

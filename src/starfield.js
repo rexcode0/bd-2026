@@ -83,13 +83,6 @@ let t = 0;
 function draw() {
   ctx.clearRect(0, 0, W, H);
 
-  // Draw background gradient
-  const grad = ctx.createRadialGradient(W * 0.5, H * 0.5, 0, W * 0.5, H * 0.5, W * 0.85);
-  grad.addColorStop(0, '#0e0d2a');
-  grad.addColorStop(1, '#04040f');
-  ctx.fillStyle = grad;
-  ctx.fillRect(0, 0, W, H);
-
   t += 1;
 
   // ── Background stars ──
@@ -240,13 +233,20 @@ function handleInteraction(e) {
     }
   }
   if (nearestC) {
-    if (!activatedConstellationIds.has(nearestC.id)) {
-      activatedConstellationIds.add(nearestC.id);
-      canvas.dispatchEvent(new CustomEvent('constellationStarActivated', {
-        bubbles: true,
-        detail: { id: nearestC.id, total: constellationStars.length, activated: activatedConstellationIds.size, star: nearestC }
-      }));
-    }
+    const isNew = !activatedConstellationIds.has(nearestC.id);
+    if (isNew) activatedConstellationIds.add(nearestC.id);
+
+    // Always fire the event so already-activated stars can re-show their message
+    canvas.dispatchEvent(new CustomEvent('constellationStarActivated', {
+      bubbles: true,
+      detail: {
+        id: nearestC.id,
+        total: constellationStars.length,
+        activated: activatedConstellationIds.size,
+        star: nearestC,
+        isNew           // main.js uses this to avoid double-counting progress
+      }
+    }));
   }
 }
 
