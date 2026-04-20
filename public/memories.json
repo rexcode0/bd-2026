@@ -6,7 +6,7 @@
       "x": 0.15,
       "y": 0.15,
       "type": "text",
-      "label": "Habit",
+      "label": "trust",
       "date": "Memory",
       "content": "There are a thousand reason to not trust you \nBut I m believing the one that trusts you"
     },
@@ -53,7 +53,7 @@
       "type": "text",
       "label": "Balance",
       "date": "Memory",
-      "content": "you reassures me always , you calms me down , you makes me feel better always"
+      "content": "you reassures me always , you calm me down , you make me feel better always"
     },
     {
       "id": 7,
@@ -71,7 +71,7 @@
       "type": "text",
       "label": "just what you want",
       "date": "Memory",
-      "content": "mai jaisa hu tuje waisa hi pasand hu , it's just what a man wants , but i m trying to chagne  myself for you always"
+      "content": "mai jaisa hu tuje waisa hi pasand hu , it's just what a man wants , but i m trying to chagne myself for you always"
     },
     {
       "id": 9,
@@ -97,7 +97,7 @@
       "id": "h1",
       "x": 0.50,
       "y": 0.20,
-      "content": "you were always the one for me"
+      "content": "you are always the one for me"
     },
     {
       "id": "h2",
@@ -118,7 +118,7 @@
       "id": "h5",
       "x": 0.50,
       "y": 0.65,
-      "content": " you once said \"Like haa pasand hai maire ko ,my love language is kiss I guess\",wanna try someday?"
+      "content": " you once said \"Like haa pasand hai maire ko ,my love language is kiss I guess\", wanna try someday?"
     },
     {
       "id": "h6",
@@ -128,7 +128,8 @@
     {
       "id": "h7",
       "x": 0.72,
-      "y": 0.25
+      "y": 0.25,
+      "content":"you are my last love"
     },
     {
       "id": "h8",
@@ -191,5 +192,5 @@
       "h7"
     ]
   ],
-  "final": "bas… ye sab bolna tha.\nI LOVE YOU meri KRITIKA"
+  "final": "bas… ye sab bolna tha.\nI LOVE YOU MERI KRITIKA"
 }
