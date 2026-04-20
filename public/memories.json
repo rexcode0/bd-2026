@@ -40,7 +40,7 @@
     {
       "id": 5,
       "x": 0.50,
-      "y": 0.05,
+      "y": 0.20,
       "type": "text",
       "label": "Voice",
       "date": "Memory",
@@ -49,7 +49,7 @@
     {
       "id": 6,
       "x": 0.50,
-      "y": 0.95,
+      "y": 0.75,
       "type": "text",
       "label": "Balance",
       "date": "Memory",
@@ -62,7 +62,7 @@
       "type": "text",
       "label": "Future",
       "date": "Memory",
-      "content": "Hope well be togeather each year until our years come to an end"
+      "content": "Hope we`ll be togeather each year until our years come to an end"
     },
     {
       "id": 8,
@@ -71,7 +71,7 @@
       "type": "text",
       "label": "just what you want",
       "date": "Memory",
-      "content": "mai jaisa hu tuje waisa hi pasand hu , it's just what a man wants , but i m trying to chagne  myself for you"
+      "content": "mai jaisa hu tuje waisa hi pasand hu , it's just what a man wants , but i m trying to chagne  myself for you always"
     },
     {
       "id": 9,
@@ -89,7 +89,7 @@
       "type": "text",
       "label": "finally 19",
       "date": "Memory",
-      "content": "just one more year to reach 20 , wow , ye mai tere se chota hu , nahi hu wasai pr hu yr"
+      "content": "just one more year to reach 20 , wow , yr mai tere se chota hu , nahi hu wasai pr hu yr"
     }
   ],
   "constellation": [
