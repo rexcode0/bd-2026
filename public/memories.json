@@ -1,0 +1,195 @@
+{
+  "intro": "pata nahi kaise start karu…\nbas itna hai ki tuje happy birthday bolna hai",
+  "memories": [
+    {
+      "id": 1,
+      "x": 0.15,
+      "y": 0.15,
+      "type": "text",
+      "label": "Habit",
+      "date": "Memory",
+      "content": "There are a thousand reason to not trust you \nBut I m believing the one that trusts you"
+    },
+    {
+      "id": 2,
+      "x": 0.85,
+      "y": 0.15,
+      "type": "text",
+      "label": "inspiration",
+      "date": "Memory",
+      "content": "Today I was asked 'what Inspired me last week' altough I told them I was inspired by a language But deepdown I was more inspired by You I was inspired by you trusting me even without me Being able to trust you very well"
+    },
+    {
+      "id": 3,
+      "x": 0.15,
+      "y": 0.85,
+      "type": "text",
+      "label": "are you real?",
+      "date": "Memory",
+      "content": "Sometimes u feel too good to be true\nBut I have met u in person, u are true , it's insane , wow"
+    },
+    {
+      "id": 4,
+      "x": 0.85,
+      "y": 0.85,
+      "type": "text",
+      "label": "apologies and thankfullness",
+      "date": "Memory",
+      "content": "Sorry for each time I made you feel bad \n And sorry for not making you feel heard \n Sorry for letting you get bored \n And thanks for choosing me\n  Thanks for choosing me each time"
+    },
+    {
+      "id": 5,
+      "x": 0.50,
+      "y": 0.05,
+      "type": "text",
+      "label": "Voice",
+      "date": "Memory",
+      "content": "your voice , you once said you dont like it , how you can't it's so cute and i just love it "
+    },
+    {
+      "id": 6,
+      "x": 0.50,
+      "y": 0.95,
+      "type": "text",
+      "label": "Balance",
+      "date": "Memory",
+      "content": "you reassures me always , you calms me down , you makes me feel better always"
+    },
+    {
+      "id": 7,
+      "x": 0.05,
+      "y": 0.50,
+      "type": "text",
+      "label": "Future",
+      "date": "Memory",
+      "content": "Hope well be togeather each year until our years come to an end"
+    },
+    {
+      "id": 8,
+      "x": 0.95,
+      "y": 0.50,
+      "type": "text",
+      "label": "just what you want",
+      "date": "Memory",
+      "content": "mai jaisa hu tuje waisa hi pasand hu , it's just what a man wants , but i m trying to chagne  myself for you"
+    },
+    {
+      "id": 9,
+      "x": 0.30,
+      "y": 0.30,
+      "type": "text",
+      "label": "belive",
+      "date": "Memory",
+      "content": "even i didn't belived in me , but you did "
+    },
+    {
+      "id": 10,
+      "x": 0.70,
+      "y": 0.30,
+      "type": "text",
+      "label": "finally 19",
+      "date": "Memory",
+      "content": "just one more year to reach 20 , wow , ye mai tere se chota hu , nahi hu wasai pr hu yr"
+    }
+  ],
+  "constellation": [
+    {
+      "id": "h1",
+      "x": 0.50,
+      "y": 0.20,
+      "content": "you were always the one for me"
+    },
+    {
+      "id": "h2",
+      "x": 0.38,
+      "y": 0.15
+    },
+    {
+      "id": "h3",
+      "x": 0.28,
+      "y": 0.25
+    },
+    {
+      "id": "h4",
+      "x": 0.28,
+      "y": 0.40,
+      "content": "shayad tu notice nahi karti… par tu cheeze thodi easy bana deti hai."
+    },
+    {
+      "id": "h5",
+      "x": 0.50,
+      "y": 0.65
+    },
+    {
+      "id": "h6",
+      "x": 0.72,
+      "y": 0.40
+    },
+    {
+      "id": "h7",
+      "x": 0.72,
+      "y": 0.25
+    },
+    {
+      "id": "h8",
+      "x": 0.62,
+      "y": 0.15
+    },
+    {
+      "id": "h9",
+      "x": 0.50,
+      "y": 0.40
+    }
+  ],
+  "constellationEdges": [
+    [
+      "h1",
+      "h2"
+    ],
+    [
+      "h2",
+      "h3"
+    ],
+    [
+      "h3",
+      "h4"
+    ],
+    [
+      "h4",
+      "h5"
+    ],
+    [
+      "h5",
+      "h6"
+    ],
+    [
+      "h6",
+      "h7"
+    ],
+    [
+      "h7",
+      "h8"
+    ],
+    [
+      "h8",
+      "h1"
+    ],
+    [
+      "h9",
+      "h1"
+    ],
+    [
+      "h9",
+      "h3"
+    ],
+    [
+      "h9",
+      "h5"
+    ],
+    [
+      "h9",
+      "h7"
+    ]
+  ],
+  "final": "bas… ye sab bolna tha.\nbina reason ke nahi likha hai."
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#0b0c2a" />
+    <meta name="description" content="A personal, interactive journey through our memories — written in the stars." />
+    <title>Our Universe ✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 1: LANDING
+    ═══════════════════════════════════════════ -->
+    <section id="landing" class="section active">
+      <!-- Canvas for landing star background -->
+      <canvas id="landing-canvas"></canvas>
+
+      <!-- Nebula glows -->
+      <div class="nebula nebula-tl"></div>
+      <div class="nebula nebula-br"></div>
+
+      <!-- Center content -->
+      <div class="landing-content">
+        <p class="landing-subtitle">✦ Our Universe ✦</p>
+        <h1 class="landing-headline" id="landing-headline" style="font-size: 1.8rem;">
+          Kuch baatein waqt ke saath an-kahi reh jaati hain…<br/>
+          <em>You didn't just enter my life... you became my universe.</em>
+        </h1>
+        <p class="landing-tagline">A journey through our memories</p>
+        <button id="begin-btn" class="btn-primary">Begin Journey</button>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 2: INTERACTIVE STARFIELD
+    ═══════════════════════════════════════════ -->
+    <section id="starfield-section" class="section">
+      <canvas id="main-canvas"></canvas>
+
+      <!-- Hint text -->
+      <p class="hint-text" id="hint-text">Tap a glowing star to discover a memory…</p>
+
+      <!-- Progress indicator -->
+      <div class="progress-bar" id="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 3: FINAL REVEAL
+    ═══════════════════════════════════════════ -->
+    <section id="final-reveal" class="section">
+      <canvas id="reveal-canvas"></canvas>
+      <div class="nebula nebula-center"></div>
+
+      <div class="reveal-content">
+        <canvas id="constellation-full" width="280" height="240"></canvas>
+
+        <div class="reveal-text" id="reveal-text">
+          <p class="reveal-line1">Itne waqt aur itni baaton ke baad hi shayad tab samjha...</p>
+          <p class="reveal-line2" style="margin-top: 5px;">Tum sirf ek insaan nahi ho.</p>
+          <p class="reveal-line3" style="font-size: 1.1rem; line-height: 1.4; margin-top: 10px;">You are the gravity that holds my <strong>infinity</strong> together.</p>
+        </div>
+
+        <p class="reveal-birthday">Happy Birthday, meri Kritika ♥</p>
+
+        <button id="replay-btn" class="btn-ghost">↺ Replay Journey</button>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         MEMORY CARD POPUP
+    ═══════════════════════════════════════════ -->
+    <div id="memory-overlay" class="memory-overlay" aria-hidden="true">
+      <div id="memory-card" class="memory-card" role="dialog" aria-modal="true">
+        <button id="memory-close" class="memory-close" aria-label="Close">✕</button>
+        <div id="memory-body" class="memory-body"></div>
+        <p class="memory-tap-hint">Tap anywhere to close</p>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         STAR DISCOVERED TOAST
+    ═══════════════════════════════════════════ -->
+    <div id="star-toast" class="star-toast" aria-live="polite"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
